@@ -1,0 +1,57 @@
+name: Refresh contribution snake
+
+on:
+  schedule:
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/contribution-snake.svg?palette=github-light&color_snake=#175CD3
+            dist/contribution-snake-dark.svg?palette=github-dark&color_snake=#58A6FF
+
+      - name: Respect reduced-motion preferences
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          motion_style = "<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}</style>"
+          for filename in ("contribution-snake.svg", "contribution-snake-dark.svg"):
+              path = Path("dist") / filename
+              svg = path.read_text()
+              if svg.count("</svg>") != 1:
+                  raise ValueError(f"Unexpected SVG output: {filename}")
+              svg = svg.replace("</svg>", motion_style + "</svg>")
+              ET.fromstring(svg)
+              path.write_text(svg)
+          PY
+
+      # Only generated SVGs are published to this branch; main keeps the source.
+      - name: Publish generated images
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5
+        with:
+          target_branch: profile-assets
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          jekyll: false
+          commit_message: "Refresh contribution snake"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
