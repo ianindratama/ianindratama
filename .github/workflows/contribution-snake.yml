@@ -33,11 +33,15 @@ jobs:
           import xml.etree.ElementTree as ET
 
           motion_style = "<style>@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}</style>"
+          static_style = "<style>*{animation:none!important;transition:none!important}</style>"
           for filename in ("contribution-snake.svg", "contribution-snake-dark.svg"):
               path = Path("dist") / filename
               svg = path.read_text()
               if svg.count("</svg>") != 1:
                   raise ValueError(f"Unexpected SVG output: {filename}")
+              static_svg = svg.replace("</svg>", static_style + "</svg>")
+              ET.fromstring(static_svg)
+              path.with_name(path.stem + "-static.svg").write_text(static_svg)
               svg = svg.replace("</svg>", motion_style + "</svg>")
               ET.fromstring(svg)
               path.write_text(svg)
