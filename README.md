@@ -1,12 +1,41 @@
-# Halo semua! 
+# Hi, I'm Ian
 
-Perkenalkan nama saya **Indratama Pangasian Manalu**.
+**Software developer & educator**
 
-Jika kamu tertarik untuk berkenalan denganku, silakan ikuti akun [Linkedin](https://www.linkedin.com/in/indratama-pangasian-manalu-847950143/)ku ya.
+My background is in Android development. I build mobile applications, develop learning materials at Dicoding, and write about the concepts and decisions behind software.
 
-<p align="left">
-<a href="https://github.com/ianindratama">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ianindratama&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ianindratama&layout=compact&langs_count=8&theme=algolia"/>
-</a>
-</p>
+My repositories include Kotlin and Flutter applications, developer-tooling experiments, and projects built as part of my own learning.
+
+## Selected projects
+
+| Project | Focus |
+| --- | --- |
+| [Companion Mode](https://github.com/ianindratama/IDE-Mobile-Sandbox-PoC) | A proof of concept connecting a browser JSON editor with a Flutter companion through Socket.IO. |
+| [Book Tracker](https://github.com/ianindratama/BookTrackerApp) | An Android reading tracker with Room persistence, page-progress tracking, and daily reminder scheduling. |
+| [Dish Atlas](https://github.com/ianindratama/dish-atlas-compose) | A Jetpack Compose course project exploring search, navigation, and favorites shared across screens. |
+| [Story App](https://github.com/ianindratama/story_app) | A Flutter photo-story client with authentication, image uploads, and optional location features. |
+
+I also contributed the Android implementation of [IELTS Speaking Simulation](https://play.google.com/store/apps/details?id=com.ianindratama.ieltsspeakingsimulation&hl=en), including timed recordings, API integration, and attempt review. This was a team project; machine learning, cloud services, and the original UI/UX design were separate team contributions.
+
+## Writing
+
+I write in English and Indonesian about mobile development, problem solving, and learning. A few starting points:
+
+- [From XML to Jetpack Compose: A mindset shift](https://ianindratama.medium.com/dari-xml-ke-jetpack-compose-perubahan-mindset-dalam-pengembangan-aplikasi-android-7fc67b35e29b) — Indonesian
+- [Learning networking as a mobile developer](https://ianindratama.medium.com/belajar-jaringan-komputer-dari-kacamata-mobile-developer-fd180e2224e3) — Indonesian
+- [What Thinking in Systems taught me](https://ianindratama.medium.com/what-the-book-of-thinking-in-systems-by-donella-meadows-taught-me-de512af8b105) — English
+
+## GitHub activity
+
+[![Most-used languages in Ian's public repositories](https://github-stats-extended.vercel.app/api/top-langs/?username=ianindratama&layout=compact&langs_count=6&theme=transparent&hide_border=true&title_color=175CD3&custom_title=Languages%20in%20my%20repositories&disable_animations=true)](https://github.com/ianindratama?tab=repositories)
+
+<details>
+<summary>More GitHub activity</summary>
+
+[![Ian's public GitHub contribution statistics](https://github-stats-extended.vercel.app/api?username=ianindratama&show_icons=true&hide_rank=true&theme=transparent&hide_border=true&title_color=175CD3&icon_color=175CD3&custom_title=GitHub%20activity&disable_animations=true)](https://github.com/ianindratama)
+
+</details>
+
+## Connect
+
+[Website](https://ianindratama.com) · [LinkedIn](https://www.linkedin.com/in/ianindratama/) · [Medium](https://ianindratama.medium.com/) · [X](https://x.com/ianindratamaa)
