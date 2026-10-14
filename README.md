@@ -37,3 +37,11 @@ I write in English and Indonesian about mobile development, problem solving, and
 ## Connect
 
 [Website](https://ianindratama.com) · [LinkedIn](https://www.linkedin.com/in/ianindratama/) · [Medium](https://ianindratama.medium.com/) · [X](https://x.com/ianindratamaa)
+
+<!-- Generated daily by .github/workflows/contribution-snake.yml; SVGs live on the profile-assets branch. -->
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ianindratama/ianindratama/profile-assets/contribution-snake-dark-static.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ianindratama/ianindratama/profile-assets/contribution-snake-static.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ianindratama/ianindratama/profile-assets/contribution-snake-dark.svg" />
+  <img alt="Snake animation tracing Ian's GitHub contribution graph." src="https://raw.githubusercontent.com/ianindratama/ianindratama/profile-assets/contribution-snake.svg" />
+</picture>
