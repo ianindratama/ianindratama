@@ -27,14 +27,12 @@ I write in English and Indonesian about mobile development, problem solving, and
 
 ## GitHub activity
 
-[![Most-used languages in Ian's public repositories](https://github-stats-extended.vercel.app/api/top-langs/?username=ianindratama&layout=compact&langs_count=6&theme=transparent&hide_border=true&title_color=175CD3&custom_title=Languages%20in%20my%20repositories&disable_animations=true)](https://github.com/ianindratama?tab=repositories)
-
-<details>
-<summary>More GitHub activity</summary>
-
-[![Ian's public GitHub contribution statistics](https://github-stats-extended.vercel.app/api?username=ianindratama&show_icons=true&hide_rank=true&theme=transparent&hide_border=true&title_color=175CD3&icon_color=175CD3&custom_title=GitHub%20activity&disable_animations=true)](https://github.com/ianindratama)
-
-</details>
+<p align="left">
+<a href="https://github.com/ianindratama">
+  <img height="180em" alt="Ian's GitHub statistics" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ianindratama&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+  <img height="180em" alt="Most-used languages in Ian's repositories" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ianindratama&layout=compact&langs_count=8&theme=algolia"/>
+</a>
+</p>
 
 ## Connect
 
